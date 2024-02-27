@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.png">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedorcajatexto">
+                <textarea id="ingresoTexto" class="cajatexto" placeholder="Ingreso el texto aqui"></textarea>
+            </div>
+            <div class="footerseccion1">
+                <div class="alerta">
+                    <img src="imagenes/exclamation.png" alt="Alerta">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="contenedor-botones">
+                    <input id="btnEncriptar" type="button" class="btn-encriptar" value="Encriptar">
+                    <input id="btnDesencriptar" type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedormuneco">
+                <img id="muneco" src="imagenes/Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3 id="mensaje1" class="mensaje1">Ningún mensaje fue <br> encontrado</h3>
+                <p id="info1" class="info1">Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contedor-resultado">
+                <textarea id="mensajeFinal" class="mensajeFinal"></textarea>
+            </div>
+            <div class="contenedor-copiar">
+                <input id="btnCopiar" type="button" class="btn-copiar" value="Copiar">
+            </div>     
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
