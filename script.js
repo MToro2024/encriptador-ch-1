@@ -37,21 +37,21 @@ const reset = ()=>{
 }
 
 btnEncriptar.addEventListener("click",() => {
-   const texto = ingresoTexto.value.toLowerCase()
-   if(texto !=""){
+   const texto = ingresoTexto.value.toLowerCase();
+    if(texto !=""){
         function encriptar(newText){
-         for(let i=0; i<reemplazar.length;i++){
-            if(newText.includes(reemplazar[i][0])){
-                newText = newText.replaceAll(reemplazar[i][0],reemplazar[i][1]);
+            for(let i=0; i<reemplazar.length;i++){
+                if(newText.includes(reemplazar[i][0])){
+                    newText = newText.replaceAll(reemplazar[i][0],reemplazar[i][1]);
+                };
             };
-        };
-        return newText
-    }
-   }else{
+            return newText
+        }
+    }else{
         alert("Ingrese texto a encriptar");
         reset();
-   }
-   inicio(encriptar(texto));
+    }
+    inicio(encriptar(texto));
 })
 
 btnDesencriptar.addEventListener("click",() => {
