@@ -134,7 +134,15 @@ main {
     color: #0A3871;
     display: none;
 }
-
+.contenedorfooter{
+    text-align: center;
+    padding: 24px;
+    color: #0A3871;
+}
+.github{
+    width: 24px;
+    height: 24px;
+}
 @media screen and (max-width: 800px) {
     main {
         grid-template-columns: 1fr;
@@ -153,6 +161,9 @@ main {
     }
 
     .contenedormuneco {
+        display: none;
+    }
+    .contenedorfooter{
         display: none;
     }
 }
