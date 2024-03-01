@@ -42,7 +42,12 @@ main {
 }
 
 .alerta {
+    display: flex;
+    flex-direction: row;
     font-size: 12px;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
     color: #495057;
 }
 
@@ -80,21 +85,18 @@ main {
     background: #ffffff;
     border-radius: 32px;
     padding: 32px;
+    margin-top: 40px;
+    gap: 32px;
     box-sizing: border-box;
     display: flex;
+    line-height: 1.5;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 32px;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
     box-shadow: 0px 24px 32px 8px rgba(0,0,0, 0.08);
 }
-
-.contenedormuneco {
+.muneco{
     width: 100%;
-}
-
-.contenedor-parrafo {
-    text-align: center;
 }
 
 .mensaje1 {
@@ -108,32 +110,41 @@ main {
     color: #495057;
 }
 .mensajeFinal{
-    height: 80%;
+    height: 86%;
     width: 100%;
     font-size: 24px;
+    padding: 20px;
+    top: 0;
+    left: 0; 
     border: none;
-    outline: none;
     resize: none;
+    justify-content: start;
     background: none;
+    line-height: 36px;
     font-weight: bold;
     color: #495057;
     display: none;
 }
-.contenedor-copiar{
+.mensajeFinal:focus{
+    outline: none;
+}
+/* .contenedor-copiar{
     bottom: 400px;
     top: 700px;
     width: 100%;
     align-items: center;
-}
+} */
 .btn-copiar {
-    margin-left: auto;
-    margin-top: auto;
-    padding: 24px;
-    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
     background-color: #D8DFE8;
     color: #0A3871;
     display: none;
 }
+.btn-encriptar:hover,.btn-desencriptar:hover,.btn-copiar:hover{
+    transform: scale(0.97);
+}
+
 .contenedorfooter{
     text-align: center;
     padding: 24px;
@@ -142,6 +153,11 @@ main {
 .github{
     width: 24px;
     height: 24px;
+    cursor: pointer;
+}
+
+.github:hover{
+    opacity: 0.6;
 }
 @media screen and (max-width: 800px) {
     main {
@@ -155,12 +171,22 @@ main {
         height: 100%;
     }
 
+    .contenedor-botones{
+        justify-content: center;
+    }
+
     .btn-desencriptar,
     .btn-encriptar {
         width: 45%;
     }
+    .btn-copiar{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
 
-    .contenedormuneco {
+    .muneco {
         display: none;
     }
     .contenedorfooter{

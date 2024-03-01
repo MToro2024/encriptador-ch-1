@@ -16,13 +16,11 @@
     </header>
     <main>
         <section class="seccion1">
-            <div class="contenedorcajatexto">
-                <textarea id="ingresoTexto" class="cajatexto" placeholder="Ingreso el texto aqui"></textarea>
-            </div>
+            <textarea id="ingresoTexto" class="cajatexto" placeholder="Ingreso el texto aqui"></textarea>
             <div class="footerseccion1">
                 <div class="alerta">
-                    <img src="imagenes/exclamation.png" alt="Alerta">
-                    <span>Solo letras minúsculas y sin acentos</span>
+                    <img src="imagenes/exclamation.png" alt="Imagen alerta">
+                    <span class="textoAviso">Solo letras minúsculas y sin acentos</span>
                 </div>
                 <div class="contenedor-botones">
                     <input id="btnEncriptar" type="button" class="btn-encriptar" value="Encriptar">
@@ -31,19 +29,15 @@
             </div>
         </section>
         <section class="seccion2">
-            <div class="contenedormuneco">
-                <img id="muneco" src="imagenes/Muñeco.png" alt="Muñeco">
+            <div class="contenedorfinal">
+                <textarea type="mensaje" id="mensajeFinal" class="mensajeFinal" readonly></textarea> 
             </div>
-            <div class="contenedor-parrafo">
+            <div class="contenedormuneco">
+                <img class="muneco" id="muneco" src="imagenes/Muñeco.png" alt="Muñeco">
                 <h3 id="mensaje1" class="mensaje1">Ningún mensaje fue <br> encontrado</h3>
                 <p id="info1" class="info1">Ingrese el texto que desees encriptar o <br> desencriptar.</p>
             </div>
-            <div class="contedor-resultado">
-                <textarea id="mensajeFinal" class="mensajeFinal"></textarea>
-            </div>
-            <div class="contenedor-copiar">
-                <input id="btnCopiar" type="button" class="btn-copiar" value="Copiar">
-            </div>     
+            <input id="btnCopiar" type="button" class="btn-copiar" value="Copiar">    
         </section>
     </main>
     <footer>
